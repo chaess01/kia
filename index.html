@@ -117,19 +117,8 @@
             text-align: center;
             padding: 20px;
         }
-        #etc .box{
-            padding: 15px;
-            background: #eeeeee;
-        }
-        #etc .box img{
-            width:25px;
-        }
-        #etc .box h3{
-            font-size: 17px;
-            font-weight: bold;
-        }
-        #etc .box img:nth-child(1){display: inline;}
-        #etc .box img:nth-child(2){display: none;}
+      
+    
         #news .col-sm-6{
             float:left;
             height: 450px;
@@ -174,11 +163,37 @@
         #collapse{
             display: none;
         }
-        #etc .row .box{
-            margin-bottom: 10px;
-        }
+            
         #home .box{
             border: none;
+        }
+         #etc .box{
+            position: relative;
+            padding: 15px;
+            background: #eeeeee;
+        }
+        #etc .box img{
+            width:25px;
+        }
+        #etc .box h3{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        #etc .row .box img:first-child {
+            display: block;
+        }
+        #etc .row .box img:nth-child(2) {
+            display: none;
+        }
+        #etc .row .box:hover img:first-child {
+            display: none;
+        }
+        #etc .row .box:hover img:nth-child(2) {
+            display: block;
+        }
+        #etc .row .box:hover {
+            background-color: #010E18;
+            color: white;
         }
    /* 글씨체 */
         #footer1 .black-han-sans-regular {
@@ -553,7 +568,7 @@
             <div class="col-sm-3">
                 <div class="box">
                     <img src="img/icon_car-01.svg" alt="견적내기아이콘">
-                    <img src="img/icon_car-01-w.svg" alt="견적내기아이콘">
+                    <img src="img/icon_car-01-w.svg"  alt="견적내기아이콘">
                     <h3>견적 내기</h3>
                     <div>자세히보기</div>
                 </div>
@@ -626,7 +641,8 @@
                 </div>
                     
         </div>
-        </div>    
+        </div>  
+        </div>  
        
 
     <!-- footer ---------------------------------------------------------->
