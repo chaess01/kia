@@ -121,14 +121,6 @@
             padding: 15px;
             background: #eeeeee;
         }
-        #etc .box:hover{
-            padding: 15px;
-            background: #05141F;
-            color: #eeeeee;
-            
-        }
-        #etc .box:hover img:nth-child(1){display: none;}
-        #etc .box:hover img:nth-child(2){display: inline;}
         #etc .box img{
             width:25px;
         }
@@ -145,9 +137,10 @@
         #news .col-sm-6:nth-child(2){
             background: #697278;
         }
-        #news .col-sm-4{
+        #news2{
             padding-top: 50px;
-            padding-bottom: 150px;;
+            padding-bottom: 150px;
+            
         }
         #footer1{
             background: #05141F;
@@ -225,10 +218,7 @@
                 width: 100%;                               
                 height: 200px;   
             }
-            #news .col-sm-4{
-                padding-top: 30px;
-                padding-bottom: 30px;;
-            }           
+           
             #news .p{
                 display: none;
             }
@@ -296,6 +286,18 @@
         }
        
    </style>
+   <script>
+        $(document).ready(function(){
+            $(window).scroll(function(e){
+                console.log($(window).scrollTop());
+                if($(window).scrollTop()>1300){
+             
+                    $("#news2").addClass("animate__fadeInUp")
+
+                }
+            });
+        });
+   </script>
 </head>
 <body>
     <!--navigation -------------------------------------------------------------------------->
@@ -603,29 +605,29 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="animate__animated animate__fadeInUp">
+        <div id="news2" class="animate__animated">
+        <div class="row" >
+                <div class="col-sm-4" >
+               
                     <h4 >뉴스</h4>
                     <p>기아, 제11회 스킬 월드컵 성료</p>
                 </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="animate__animated animate__fadeInUp">
+                
+                <div class="col-sm-4" >
+                    
                         <h4>뉴스</h4>
                         <p>기아, ‘더 기아 EV3’ 세계 최초 공개</p>
-                        </div>
-                        </div>
-                    <div class="col-sm-4">
-                    <div class="animate__animated animate__fadeInUp">
+                </div>
+                        
+                <div class="col-sm-4" >
+                    
                     <h4>공지</h4>
                     <p>개인정보 처리방침 변경 안내 (2024.05.31)</p>
-                    </div>
-                    </div>
                 </div>
-            </div>
+                    
         </div>
-    </div>
+        </div>    
+       
 
     <!-- footer ---------------------------------------------------------->
     <div id="footer1" class="container-fluid">
